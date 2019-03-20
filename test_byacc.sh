@@ -29,3 +29,11 @@ then
     cd ..
 fi
 
+byacc -v
+
+mkdir -p test/objects
+
+byacc -d -o test/objects/gspn_grammar.y.c src/gspn_grammar.y
+
+ls -lah test/objects
+
